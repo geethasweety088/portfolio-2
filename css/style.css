@@ -1,0 +1,155 @@
+/* Reset default styles */
+*{
+    Margin :0;
+    Padding :0;
+    Box-sizing: border-box;
+    }
+    Html{
+    Scroll-behavior: smooth;}
+
+header{position: absolute; left: 0; top: 0; width: 100%; z-index: 2;}
+
+.logo{float: left;}
+nav{float: right;}
+nav ul{list-style: none;}
+nav ul li{display: inline-block; margin: 5px 5px;}
+nav ul li a{font-size: 16px; line-height: 18px; text-decoration: none;margin: 20px 20px 0 0 }
+
+#home{
+    background-image: url('../images/web1.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+}
+#home::before{content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5);}
+
+#home .main{float: right; margin: 100px 0 0 0; background: red; padding: 30px;}
+
+#about
+    {
+    Display:flex;
+    Flex-direction: column;
+    Box-sizing:border;
+    align-items: center;
+    Padding:40px;
+    Margin-bottom: 70px;
+    }
+    #pic{
+    Display: flex;
+    }
+    #pic img{
+    Width:750px;
+    Height:600px;
+    }
+    #intro 
+    {
+    Display: flex;
+    Flex-direction:column;
+    Text-align: justify;
+    Padding:10px;
+    }
+    #intro h2{
+    Font-size: 2rem;
+    Margin-bottom: 20px;
+    }
+  
+    #portfolio
+    {
+    Display: flex;
+    Flex-direction:column;
+    Background-color: rgba(0,0,0,0.9);
+    Color: white;
+    Align-items: center;
+    Padding:20px;
+    }
+    .gallery{
+     Display:flex;
+    flex-wrap:wrap;
+    Justify-content:  space-around;
+    Box-sizing: border-box;
+    }
+    .gallery img{
+    Width: 360px;
+    Height: 240px;
+    Margin:10px;
+    }
+   
+    #services{
+    Display : flex;
+    align-items: center;
+    Flex-direction:column;
+    Padding:20px;
+    }
+    .row{
+    Display: flex;
+    Justify-content: space-around;
+    Flex-wrap: wrap;
+    Box-sizing: border-box;
+    
+    }
+    .box{
+    Display: flex;
+    Flex-direction: column;
+    Width:350px;
+    Height:450px;
+    Border: 1px solid black;
+    Margin:10px;
+    Align-items: center;
+    Text-align : justify;
+    Padding:10px;
+    Border-radius: 15px;
+    Background: linear-gradient(to top, rgb(255,45,45) 50% ,white 50%);
+    Background-size:  100% 200%;
+    Transition: all .8s;
+    }
+    .box:hover{
+    Background-position:left bottom;
+    Color: white;
+    Border: none;
+    Box-shadow: 0 0 20px rgd(255,45,45);
+    }
+    .box img{
+    Width: 80px;
+    Height: 80px;
+    Background-color: white;
+    Padding : 10px;
+    }
+    
+    
+    #contact
+    {
+    Display:flex;
+    Flex-direction: column;
+    Box-sizing:border;
+    Padding:20px;
+    Align-items: center;
+    Color:white;
+    Background-color:rgba(0,0,0,0.9);
+    }
+    .form{
+    Display:flex;
+    Flex-direction: column;
+    Box-sizing:border-box;
+    Align-items: center;
+    Margin:20px 0px;
+    }
+    .input{
+    Padding: 12px;
+    Margin: 15px;
+    width:30%;
+    Border: none;
+    Outline: none;
+    }
+    #msg{
+    Width: 20%;
+    Padding: 10px;
+    Margin: 15px;
+    Border: none;
+    Outline:none;
+    }
+    #send:hover{
+    Cursor:pointer;
+    Box-shadow: 0 0 10px white;
+    }
+    
